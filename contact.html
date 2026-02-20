@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" type="image/x-icon" href="images/Logo.png">
+</head>
+<header>
+  <nav>
+    <div class="logo">
+      <img src="images/Logo.png" class="logo-icon"></img>
+      <a href="index.html" class="logo-name">Susis Seniorenbegleitung</a>
+    </div>
+    
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Startseite</a></li>
+        <li><a href="about.html" class="nav-link">Über Mich</a></li>
+        <li><a href="services.html"  class="nav-link">Hilfsleistungen</a></li>
+        <li><a href="impressum.html"  class="nav-link">Impressum</a></li>
+      </ul>
+      <a href="contact.html" class="btn-contact-nav" >Kontakt</a>
+    </div>
+  </nav>
+</header>
+<body>
+    <!-- Contact Section -->
+    <section class="section">
+        <h2 class="section-title">Kontakt</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3>Schreiben Sie uns eine Nachricht</h3>
+                <form action="https://api.web3forms.com/submit" method="POST" >
+                    <input type="hidden" name="access_key" value="04b25dfd-6142-4506-9c6b-cd3f6c581dad">
+                    <div class="form-group">
+                        <label class="form-label">Vollständiger Name *</label>
+                        <input type="text" name="name" class="form-input" placeholder="Max Mustermann" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">E-Mail-Adresse *</label>
+                        <input type="email" name="email" class="form-input" placeholder="max@beispiel.de" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Nachricht *</label>
+                        <textarea class="form-textarea" placeholder="Erzählen Sie uns von Ihren Pflegeanforderungen..." required onkeyup="updateCharCount(this)" name="message"></textarea>
+                        <div class="char-count">0/500 Zeichen</div>
+                    </div>
+                    <button type="submit" class="btn-send">Nachricht senden</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-section">
+                    <h3>Kontaktinformation</h3>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📞</div>
+                        <div>
+                            <strong>Telefon</strong><br>
+                            (Festnetz) +49 03596 507351 <br>
+                            (mobil) +49 0157 36337960</li>
+                            
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📧</div>
+                        <div>
+                            <strong>E-Mail</strong><br>
+                            webmaster@susi-seniorenbegleitung.de
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📍</div>
+                        <div>
+                            <strong>Adresse</strong><br>
+                            Raupenbergstraße 34, Langburkersdorf (Neustadt), 01844
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">🕐</div>
+                        <div>
+                            <strong>Arbeitszeiten</strong><br>
+                            Montag - Freitag: 8:00 - 18:00<br>
+                            Samstag: 9:00 - 16:00
+                        </div>
+                    </div>
+                </div>
+
+                <div class="whatsapp-section">
+                    <div class="whatsapp-icon">💬</div>
+                    <h4>Chat auf WhatsApp</h4>
+                    <p>Schnelle Antwort garantiert</p>
+                    <button class="btn-whatsapp" onclick="window.open('https://wa.me/04915736337960')">WhatsApp Chat starten</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                <div class="logo-icon" style="width: 40px; height: 40px;">❤️</div>
+                <span style="font-size: 1.3rem; font-weight: 600;">Susi's Seniorenbegleitung</span>
+            </div>
+            <p class="footer-description">
+                Herzlich, Verlässlich, Menschlich.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Schnelllinks</h4>
+            <ul class="footer-links">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="about.html">Über Mich</a></li>
+                <li><a href="services.html">Hilfsleistungen</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Kontaktinformation</h4>
+            <ul class="footer-links" style="list-style: none;">
+                <li style="margin-bottom: 0.5rem;">📞(mobil) +49 0157 36337960</li>
+                <li style="margin-bottom: 0.5rem;">📞(Festnetz) +49 03596 507351</li>
+                <li style="margin-bottom: 0.5rem;">📧 webmaster@susis-seniorenbegleitung.de</li>
+                <li>📍 Raupenbergstraße 34 01844 Neustadt in Sachsen </li>
+            </ul>
+        </div>
+    </div>
+</footer>  
+
+</body>
+</html>
