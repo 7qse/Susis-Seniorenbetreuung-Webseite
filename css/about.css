@@ -366,6 +366,8 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             height: 480px;
+            display: flex;
+            align-items: center;
         }
 
         .bilder-card:hover {
@@ -378,7 +380,9 @@
             height: 100%;
             max-width: 100%;
             max-height: 100%;
-            object-fit: cover;
+        }
+        .bilder-image-img1 {
+            max-width: 100%;
         }
 
         footer {
